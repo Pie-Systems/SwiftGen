@@ -34,7 +34,7 @@ extension OutputDestination {
         logMessage(.info, "Not writing the file as content is unchanged")
         return
       }
-      try path.write(content)
+      try path.write(string: content)
       logMessage(.info, "File written: \(path)")
     }
   }
